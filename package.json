@@ -1,0 +1,23 @@
+{
+  "name": "chili-font-awesome",
+  "version": "1.0.0",
+  "description": "chili icon design",
+  "main": "gulpfile.js",
+  "private": false,
+  "author": "chili",
+  "scripts": {
+    "clean": "rimraf build",
+    "build:font": "dcs-icon-font --fontname chili-font-awesome --baseSelector chili-ic --classprefix chili-ic- --html --fontHeight 64 --cssTemplate templates/css.hbs --htmlTemplate templates/html.hbs",
+    "build:svg": "gulp",
+    "build:png": "png2svg-cli icons/*.png",
+    "build": "npm run build:font &npm run build:svg"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "dcs-icon-font": "latest",
+    "gulp": "latest",
+    "png2svg-cli": "^0.1.1",
+    "svg-scaler": "latest"
+  },
+  "directories": {}
+}

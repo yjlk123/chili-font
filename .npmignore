@@ -1,0 +1,16 @@
+node
+node_modules
+pom.xml
+
+# idea
+.idea/
+*.ipr
+*.iml
+*.iws
+
+/cfg
+/icons
+/src
+/test
+/server.js
+/webpack.config.js
